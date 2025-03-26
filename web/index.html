@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web UI Testing - 2</title>
+</head>
+<body>
+    <header>
+        <h1>Web UI Testing</h1>
+    </header>
+    <main>
+        <section id="section1">
+            <p>This is Section 1 content. Click the button to reveal more!</p>
+            <button id="revealButton">Reveal Content</button>
+            <div id="hiddenContent" class="hidden">
+                <p>This is the hidden content that appears when the button is clicked!</p>
+            </div>
+        </section>
+
+        <section id="section2">
+            <h2>Section 2</h2>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2>Section 3 - Form</h2>
+            <form id="sampleForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" class="age" name="age" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage" class="hidden">Form submitted successfully!</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
